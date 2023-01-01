@@ -58,7 +58,7 @@ header #description {
   margin-top: 40px;
 }
 
-.social_networks_item {
+.card {
   width: 250px;
 
   border: 2px solid #fff;
@@ -74,11 +74,11 @@ header #description {
   transition: all 1.05s;
 }
 
-.social_networks_item:hover {
+.card:hover {
   background-color: #3b3b3b;
 }
 
-.social_networks_item a {
+.card a {
   text-decoration: none;
 
   color: #fff;
@@ -91,7 +91,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .social_networks_item {
+  .card {
     width: 80%;
   }
   .content,
