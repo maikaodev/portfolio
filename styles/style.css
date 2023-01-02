@@ -87,7 +87,8 @@ header #description {
 }
 
 footer {
-  margin-top: 16px;
+  position: absolute;
+  bottom: 16px;
 }
 
 @media (min-width: 768px) {

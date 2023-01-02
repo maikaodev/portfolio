@@ -15,7 +15,7 @@ window.onload = async (event) => {
 };
 
 const creatingTheProjectList = (repos) => {
-  repos.forEach((item) => {
+  repos.reverse().forEach((item) => {
     creatingListItems(item.html_url, item.name);
   });
 };
