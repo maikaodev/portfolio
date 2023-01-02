@@ -86,7 +86,9 @@ header button a {
 }
 
 footer {
-  margin-top: 64px;
+  /* margin-top: 96px; */
+  position: absolute;
+  bottom: 16px;
 }
 
 @media (min-width: 375px) {
