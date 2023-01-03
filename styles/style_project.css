@@ -22,26 +22,32 @@ main {
   width: 80vw;
 }
 
-header button {
-  background-color: #222;
+header #button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  padding: 16px;
+  width: 100px;
+
+  background-color: #222;
+  color: #fff;
+
   border: 2px solid grey;
+
+  text-decoration: none;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  padding: 24px;
+  margin-bottom: 16px;
 
   cursor: pointer;
 }
 
-header button a {
-  text-decoration: none;
-
-  color: #fff;
-
-  font-size: 20px;
-  font-weight: 700;
-}
-
 .content h2 {
-  margin: 16px;
+  line-height: 40px;
+  margin: 32px 0;
 }
 
 #projects_list {
