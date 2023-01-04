@@ -17,6 +17,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  position: relative;
 }
 
 header {
@@ -41,9 +43,6 @@ header span {
 }
 
 header #stack {
-  display: flex;
-  flex-direction: column;
-
   width: 80%;
 
   font-weight: 300;
@@ -58,8 +57,11 @@ header #stack strong {
 }
 
 header #stack ul {
-  display: flex;
-  flex-wrap: wrap;
+  width: 100vw;
+
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 8px;
 
   list-style: none;
 }
@@ -117,6 +119,10 @@ footer {
 @media (min-width: 768px) {
   .card {
     width: 80%;
+  }
+
+  header #stack ul {
+    grid-template-columns: repeat(6, 60px);
   }
   .content,
   footer {
