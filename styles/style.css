@@ -2,31 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
+  list-style: none;
 }
 
-html,
 body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Roboto", sans-serif;
-  height: 100vh;
 
   background-color: #222;
   color: #fff;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  position: relative;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding-top: 40px;
 }
 
 header #photo {
@@ -57,13 +51,17 @@ header #stack strong {
 }
 
 header #stack ul {
-  width: 100vw;
-
-  display: grid;
-  grid-template-columns: repeat(4, 60px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
-
   list-style: none;
+}
+
+#titleStack {
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 header #stack ul li {
@@ -81,8 +79,7 @@ header #stack ul li {
 }
 
 .card {
-  width: 250px;
-
+  width: 90%;
   border: 2px solid #fff;
 
   margin-bottom: 16px;
