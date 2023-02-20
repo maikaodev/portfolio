@@ -21,24 +21,19 @@ const creatingTheProjectList = (repos) => {
 };
 
 const creatingListItems = (deploy, name) => {
-  //
   const list = document.querySelector("#projects_list");
 
-  // Elements to create
   const newLi = document.createElement("li");
   const newAnchor = document.createElement("a");
   const newSpan = document.createElement("span");
   const newParagraph = document.createElement("p");
   const _name = document.createTextNode(name);
 
-  // Link -> To deploy
   newAnchor.setAttribute("href", deploy);
   newAnchor.setAttribute("target", "_blank");
 
-  // Content
   newSpan.appendChild(_name);
 
-  // Class
   newLi.classList.add("card");
 
   list.appendChild(newLi);
