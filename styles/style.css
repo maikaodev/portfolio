@@ -16,17 +16,23 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
 
-  position: relative;
+  gap: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+
+  margin-top: 32px;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding-top: 40px;
 }
 
 header #photo {
@@ -36,29 +42,19 @@ header #photo {
   border: 2px solid grey;
 }
 
-header span {
-  font-weight: 300;
-
-  margin: 8px 0;
-}
-
 header #stack {
-  width: 80%;
+  margin: 16px auto 0 auto;
 
   font-weight: 300;
-
-  margin-bottom: 8px;
 }
 
-header #stack strong {
+header #stack h2 {
   margin-bottom: 8px;
 
   font-size: 1.5rem;
 }
 
 header #stack ul {
-  width: 100vw;
-
   display: grid;
   grid-template-columns: repeat(4, 60px);
   gap: 8px;
@@ -76,8 +72,6 @@ header #stack ul li {
   align-items: center;
 
   list-style: none;
-
-  margin-top: 40px;
 }
 
 .card {
@@ -112,8 +106,7 @@ header #stack ul li {
 }
 
 footer {
-  position: absolute;
-  bottom: 16px;
+  margin: auto;
 }
 
 @media (min-width: 768px) {
@@ -124,7 +117,7 @@ footer {
   header #stack ul {
     grid-template-columns: repeat(6, 60px);
   }
-  .content,
+  main,
   footer {
     width: 500px;
     margin: 0 auto;
